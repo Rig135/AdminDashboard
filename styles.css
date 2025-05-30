@@ -9,7 +9,7 @@
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1.3fr 5fr;
+    grid-template-rows: 1.2fr 5fr;
 }
 
 .sidebar {
@@ -21,9 +21,13 @@
 }
 
 .header {
-    background-color: antiquewhite;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 2fr 2.6fr;
+    grid-template-columns: 7fr 1.5fr 1.5fr 1.5fr;
     grid-column: 2/3;
     grid-row: 1/2;
+    box-shadow: rgba(190, 190, 190, 0.4) 0px 3px 5px;
 }
 
 .grid-item svg {
@@ -40,8 +44,30 @@
     fill: white;
 }
 
+.header-gridItem svg {
+    height: 23px;
+    width: 23px;
+}
 
+.header-gridItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
 
+.header-gridItem input {
+    width: 450px;
+    height: 25px;
+    background-color: rgb(190, 190, 190);
+    border: none;
+    border-radius: 15px;
+}
+
+.notificationIcon {
+    justify-self: end;
+    padding-right: 10px;
+}
 
 
 .grid-item {
@@ -52,6 +78,68 @@
 
 }
 
+.profile1 {
+    grid-column: 3/5;
+    display: flex;
+    gap: 25px;
+    padding-left: 15px;
+    justify-content: left;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile1 img {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
 .Dashboard {
     font-size: 26px;
+}
+
+.profile2 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile2 {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    gap: 20px;
+}
+
+.profile2 #firstpara {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.profile2 #secondpara {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.gridButton {
+    justify-self: center;
+    align-self: center;
+}
+
+.gridButton button {
+    padding: 7px 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(73, 121, 202);
+    font-weight: bold;
 }
